@@ -34,24 +34,28 @@ const BookingPage = () => {
         <div className="flex flex-col gap-6">
           <Card className="p-6 border shadow-sm">
             <h2 className="text-xl font-semibold mb-4">What to expect</h2>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2">
-                <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                <span>30-minute personalized demo</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                <span>Q&A session with a product expert</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                <span>Custom pricing overview</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
-                <span>Free resources to take away</span>
-              </li>
-            </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="space-y-3">
+                <div className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span>30-minute personalized demo</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span>Q&A session with a product expert</span>
+                </div>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span>Custom pricing overview</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Check className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span>Free resources to take away</span>
+                </div>
+              </div>
+            </div>
           </Card>
           
           <Card className="p-6 border shadow-sm">
