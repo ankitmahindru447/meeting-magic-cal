@@ -20,14 +20,14 @@ const CalendarEmbed = () => {
     document.body.appendChild(script);
 
     return () => {
-      // Cleanup if needed
+      // Cleanup when component unmounts
       document.body.removeChild(script);
     };
   }, []);
 
   return (
     <div className="w-full h-full">
-      <div style={{width:"100%", height:"500px", overflow:"scroll"}} id="my-cal-inline"></div>
+      <div id="my-cal-inline" style={{width:"100%", height:"100%", minHeight:"400px"}}></div>
     </div>
   );
 };
