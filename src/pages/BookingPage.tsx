@@ -1,5 +1,4 @@
 
-import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import CalendarEmbed from "@/components/CalendarEmbed";
@@ -9,10 +8,13 @@ const BookingPage = () => {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <header className="w-full py-4 px-6 flex justify-between items-center border-b">
-        <Button variant="ghost" size="sm" className="flex items-center gap-1 text-muted-foreground">
-          <ArrowLeft className="h-4 w-4" />
-          <span>Back</span>
-        </Button>
+        <div className="flex items-center">
+          <img 
+            src="/lovable-uploads/0d10e63d-5c4d-4380-a0f9-4abdc8a82945.png" 
+            alt="Soma Logo" 
+            className="h-8" 
+          />
+        </div>
         <div className="text-sm text-muted-foreground">contact@yoursaasapp.com</div>
       </header>
       
