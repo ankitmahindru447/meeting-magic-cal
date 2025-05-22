@@ -31,7 +31,7 @@ const BookingPage = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-6">
           <Card className="p-6 border shadow-sm">
             <h2 className="text-xl font-semibold mb-4">What to expect</h2>
             <ul className="space-y-3">
